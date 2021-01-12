@@ -1,0 +1,41 @@
+
+/* ============================================= */
+/*              Forms                            */
+/* ============================================= */
+
+//Site Search section
+
+
+.siteSearch{
+    display:flex;
+    justify-content: flex-end;
+    width:90%;
+    padding: 5px;
+    background-color: $secondary-color-light; 
+    opacity: 0.5; 
+  }
+  
+  
+   #siteSearch{
+    flex-grow: 0.3;
+    padding: 5px;
+    background-image: url('/icons/icon-search.svg');
+    background-color: $secondary-color-light; 
+    color: $primary-color; 
+    background-repeat: no-repeat;
+    height: 30px;
+    background-position: right;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid $secondary-color;
+  }
+
+  #siteSearch:focus{
+    border: 3px solid $primary-color-light; 
+
+  }
+
+
+
+////User forms
+
