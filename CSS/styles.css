@@ -352,12 +352,13 @@ template {
 /* ============================================= */
 * {
   font-family: "Lato", sans-serif;
-  color: rgba(119, 119, 119, 0.6);
-  box-sizing: border-box;
+  color: rgba(20, 1, 1, 0.6);
 }
 
 p {
-  line-height: 1.45em;
+  margin: 0;
+  padding: 0;
+  line-height: 1.45;
 }
 
 a {
@@ -374,9 +375,48 @@ li {
   padding: 5px;
 }
 
+h1 {
+  color: rgba(12, 11, 14, 0.8);
+  margin: 2rem 1rem;
+}
+
 /* ============================================= */
 /*              Grid System                      */
 /* ============================================= */
+body {
+  position: relative;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 4rem;
+  margin: 0 auto;
+}
+
+.card {
+  display: flex;
+  flex-flow: row nowrap;
+  border: solid 1px rgba(20, 1, 1, 0.6);
+  border-radius: 5px;
+  align-items: center;
+  margin: 0 1rem;
+}
+
+.text-container {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 0.5rem;
+  color: rgba(20, 1, 1, 0.6);
+  flex-grow: 2;
+}
+
+.name {
+  margin: 0;
+  color: rgba(12, 11, 14, 0.8);
+  text-align: left;
+}
+
 /* ============================================= */
 /*              Navigation                       */
 /* ============================================= */
@@ -397,13 +437,13 @@ li {
   padding: 5px;
   background-image: url("/icons/icon-search.svg");
   background-color: rgba(221, 221, 221, 0.6);
-  color: rgba(32, 13, 100, 0.8);
+  color: rgba(12, 11, 14, 0.8);
   background-repeat: no-repeat;
   height: 30px;
   background-position: right;
   border-radius: 5px;
   outline: none;
-  border: 2px solid rgba(119, 119, 119, 0.6);
+  border: 2px solid rgba(20, 1, 1, 0.6);
 }
 
 #siteSearch:focus {
@@ -416,6 +456,22 @@ li {
 /* ============================================= */
 /*              Images                           */
 /* ============================================= */
+.avatar {
+  padding: 1rem;
+  width: 20%;
+  border-radius: 50%;
+}
+
+.overlay {
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(100, 100, 100, 0.4);
+}
+
 /* ============================================= */
 /*              Media Queries                    */
 /* ============================================= */

@@ -5,3 +5,38 @@
 //Nested grids
 
 
+body{
+    position:relative;  
+}
+
+main {
+    display: grid;    
+    grid-template-columns:  repeat(auto-fit, minmax(350px, 1fr));
+    gap: 4rem;
+    margin: 0 auto;       
+}
+
+.card {
+    display: flex;
+    flex-flow: row nowrap;
+    border: solid 1px $secondary-color;
+    border-radius: 5px;
+    align-items: center;
+    margin: 0 1rem;
+   
+}
+
+.text-container{
+display: flex;
+flex-flow: column nowrap;
+padding: 0.5rem;
+color: $secondary-color;
+flex-grow: 2;
+}
+
+.name{
+    margin: 0;
+    color: $primary-color;
+    text-align:left;
+}
+

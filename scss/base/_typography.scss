@@ -18,13 +18,13 @@
 * {
     font-family: $primary-font;
     color: $secondary-color;
-    box-sizing: border-box;
-    
-    
+   
 }
 
 p {
-    line-height: 1.45em;
+    margin: 0;
+    padding: 0;
+    line-height: 1.45;
 }
 
 a {
@@ -42,3 +42,7 @@ li {
     padding: 5px;
 }
 
+h1{
+color: $primary-color;
+margin: 2rem 1rem;
+}
