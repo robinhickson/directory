@@ -6,37 +6,63 @@
 
 
 body{
-    position:relative;  
+    position:relative;
 }
 
 main {
     display: grid;    
-    grid-template-columns:  repeat(auto-fit, minmax(350px, 1fr));
-    gap: 4rem;
-    margin: 0 auto;       
+    grid-template-columns:  repeat(auto-fit, minmax(330px, 1fr));
+    gap: 2em;
+    margin: 0 2em;
+    padding-bottom: 2em;       
 }
 
 .card {
     display: flex;
     flex-flow: row nowrap;
+    align-content: flex-start;
     border: solid 1px $secondary-color;
     border-radius: 5px;
-    align-items: center;
-    margin: 0 1rem;
-   
+    align-items: center;    
+}
+
+.card:hover {   
+    border: solid 2px $primary-color;
+    border-radius: 10px;
 }
 
 .text-container{
 display: flex;
-flex-flow: column nowrap;
+flex-flow: column wrap;
+align-content: right;
 padding: 0.5rem;
 color: $secondary-color;
-flex-grow: 2;
+flex-grow:1;
+overflow: hidden;
+
 }
 
 .name{
     margin: 0;
     color: $primary-color;
-    text-align:left;
+   flex-wrap: wrap;
 }
+
+.name-modal{
+    margin: 0;
+    color: $primary-color;
+    font-size: 1.2em;
+    padding-bottom: 1em;
+}
+
+.address{
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    width: 100%;
+}
+
+p:last-of-type{
+    padding-top: 0.5em;
+}
+
 

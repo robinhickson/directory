@@ -5,15 +5,15 @@
 
 //Avatars
 .avatar{
-    padding: 1rem;
-    width: 20%;
+    margin: 2em;
+    margin-right: 10px;
+    width: 40%;
     border-radius: 50%;
    }
 
-//overlay
+//overlay modal
 .overlay {
-    position: absolute;
-    display:none;
+    position: absolute;   
     top: 0;
     left: 0;
     right: 0;
@@ -21,3 +21,18 @@
     background: rgba(100, 100, 100, 0.4)
     }
     
+    .modal {
+        width: 375px;
+        margin: 15% auto auto;
+        position: relative;
+        text-align: center;
+        background: $white;
+        border: 2px solid $secondary-color;
+        border-radius: 5px;
+        padding: 30px 20px;
+    }
+
+    .hidden {
+        display: none;
+        }
+        
