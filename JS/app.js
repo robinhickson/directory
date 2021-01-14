@@ -113,9 +113,9 @@ modal.addEventListener('click', e => {
 
 
 ///search functionality
-
-let searchText = search.addEventListener('keyup', e => {
-    let searchValue = document.getElementById('search').value.toLowerCase();
+let search = document.getElementById('search');
+    search.addEventListener('keyup', e => {
+    let searchValue = search.value.toLowerCase();
     searchKeywords(searchValue);
 })
 
@@ -142,10 +142,10 @@ function searchKeywords(value) {
                 cardOn = document.getElementById(`${index}`);
                 container.prepend(cardOn);
                 cardOn.style.backgroundColor = "white";
-                cardOn.style.opacity = "1"
-            })
+                cardOn.style.opacity = "1";
+            });
 
         }
-    })
+    });
 
 }
